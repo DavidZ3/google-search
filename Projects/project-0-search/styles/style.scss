@@ -19,23 +19,35 @@ body {
     align-items: center;
     background-color: $background-color;
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    flex-direction: column;
     margin: 0;
+}
+
+#header-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    width: 100%;
+}
+
+#google-logo-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100vh - 560px);
+    justify-content: end;
+    align-items: center;
+    width: 100%;
 }
 
 #search-container {
     @extend %common-font;
     display: flex;
     flex-direction: column;
-    height: 30%;
     justify-content: center;
     text-align: center;
-    width: 100vw;
-    @media (max-width: 400px){
-        width: 400px;
-    }
-    max-width: 584px;
+    width: 600px;
 
     button {
         @extend %common-font;
@@ -50,14 +62,22 @@ body {
 
 #search-bar{
     @extend %common-border;
+    text-align: left;
+    align-items: left;
+    justify-content: center;
     background-color: transparent;
     border-radius: 24px;
     color: white;
     margin: 15px 0px;
     height: 46px;
     scrollbar-color: #454a4d #202324;
-    width: 100%;
+    width: 100vw;
     max-width: 584px;
+
+    svg {
+        height: 20px;
+        width: 20px;
+    }
 }
 
 #search-bar:hover{
@@ -75,6 +95,3 @@ body {
     padding: 5px 0px 0px 5%;
     outline: none;
 }
-
-
-
