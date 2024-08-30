@@ -8,6 +8,9 @@ $border-color: #454a4d;
     font-size: 14px;
     color: $text-color;
 }
+button:hover{
+    cursor: pointer;
+}
 
 %common-border {
     border-width: 1px;
@@ -32,6 +35,11 @@ svg {
     width: 20px;
 }
 
+a {
+    @extend %common-font;
+    text-decoration: none;
+}
+
 #header-container{
     @extend %common-font;
     font-size: 13px;
@@ -45,7 +53,7 @@ svg {
         justify-content: start;
         padding: 3%;
         div {
-            padding-right: 15px;
+            padding-left: 15px;
         }
     }
     #header-center{
@@ -61,10 +69,10 @@ svg {
         }
         #sign-in-button{
             @extend %common-font;
-            font-size: larger;
+            font-size: small;
             background-color: #1e64d4;
-            border-radius: 15px;
-            padding: 8px 12px;
+            border-radius: 20px;
+            padding: 10px 15px;
             border: none;
         }
     }
@@ -99,6 +107,11 @@ svg {
         background-color: $button-border-color;
         border-radius: 5px;
         font-weight: 200;
+    }
+    button:hover{
+        border: solid;
+        border-width: 1px;
+        border-color: #5f6368;
     }
 }
 
