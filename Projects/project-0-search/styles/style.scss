@@ -147,3 +147,27 @@ a {
     width: 540px;
     overflow: hidden;
 }
+#post-search-container{
+    flex-grow: 1;
+}
+
+#footer-container{
+    @extend %common-font;
+    font-size: 13px;
+    width: 100vw;
+    height: 48px;
+    display: grid;
+    grid-auto-flow: row;
+    #footer-upper{
+        border-radius: 15px;
+        background-color: #171717;
+        border-bottom: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #313335;
+    }
+    #footer-lower{
+        border-radius: 15px;
+        background-color: #171717;
+    }
+}
+
