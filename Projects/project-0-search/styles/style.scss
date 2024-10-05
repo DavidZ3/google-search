@@ -40,6 +40,7 @@ a {
     text-decoration: none;
 }
 
+
 #header-container{
     @extend %common-font;
     font-size: 13px;
@@ -165,14 +166,41 @@ a {
         background-color: #171717;
         border-bottom: solid;
         border-bottom-width: 1px;
-        border-bottom-color: #313335;
-        padding: 15px 30px;
+        border-bottom-color: #7b7265;
+        padding: 10px 30px;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     #footer-lower{
         border-radius: 15px;
         background-color: #171717;
+        @extend %common-font;
+        font-size: 13px;
+        width: 100vw;
+        height: 48px;
+        display: grid;
+        grid-auto-flow: column;
+        #footer-left{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-left: 2%;
+            div {
+                padding-left: 15px;
+            }
+        }
+        #footer-center{
+
+        }
+        #footer-right{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 2%;
+            div {
+                padding-right: 15px;
+            }
+        }
     }
 }
 
