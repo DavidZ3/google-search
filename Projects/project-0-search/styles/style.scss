@@ -11,12 +11,6 @@ $debug: false;
 
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
-    // overflow: hidden
-}
-
 %common-font {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -39,7 +33,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    height: calc(100vh - 5px);
 }
 
 svg {
@@ -173,9 +168,7 @@ a {
 }
 
 #footer-container{
-    @extend %common-font;
     height: 90px;
-    font-size: 13px;
     // width: 100vw;
     display: grid;
     grid-auto-flow: row;
@@ -189,14 +182,14 @@ a {
         justify-content: space-between;
         flex-wrap: wrap;
         p {
-          margin: 15px;
+          @extend %common-font;
+          margin: 15px 25px;
         }
     }
     #footer-lower{
         border-radius: 15px;
         background-color: #171717;
         @extend %common-font;
-        font-size: 13px;
         width: 100vw;
         height: 46px;
         display: grid;
