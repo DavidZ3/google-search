@@ -26,29 +26,9 @@ button:hover{
     border-color: $border-color;
 }
 
-#advanced-body {
-    display: flex;
-    align-items: center;
-    background-color: $background-color;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: calc(100vh - 5px);
-    svg {
-        color: white;
-        fill: white;
-        height: 20px;
-        width: 20px;
-    }
-
-    a {
-        @extend %common-font;
-        text-decoration: none;
-    }
-}
 
 #standard-body {
+    @extend %common-font;
     display: flex;
     align-items: center;
     background-color: $background-color;
@@ -70,16 +50,20 @@ button:hover{
     }
 }
 
-
+#advanced-body {
+    @extend #standard-body;
+    align-items: start;
+}
 
 #header-container{
     @extend %common-font;
     font-size: 13px;
-    height: 86px;
+    height: 70px;
     width: 100vw;
     display: grid;
     grid-auto-flow: column;
     #header-left{
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -89,6 +73,7 @@ button:hover{
         }
     }
     #header-right{
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: end;
@@ -262,5 +247,15 @@ button:hover{
         margin: 0px;
         width: auto;
     }
+}
+
+
+
+// Advanced Search Stuff
+#app-bar {
+    margin: 25px 35px;
+    text-align: left;
+    font-size: 22px;
+    color: #d93025;
 }
 
