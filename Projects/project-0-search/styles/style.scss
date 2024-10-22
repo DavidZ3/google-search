@@ -26,6 +26,28 @@ button:hover{
     border-color: $border-color;
 }
 
+#advanced-body {
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 5px);
+    svg {
+        color: white;
+        fill: white;
+        height: 20px;
+        width: 20px;
+    }
+
+    a {
+        @extend %common-font;
+        text-decoration: none;
+    }
+}
+
 #standard-body {
     display: flex;
     align-items: center;
@@ -66,9 +88,6 @@ button:hover{
             padding-left: 15px;
         }
     }
-    #header-center{
-
-    }
     #header-right{
         display: flex;
         align-items: center;
@@ -84,7 +103,7 @@ button:hover{
             border-radius: 20px;
             width: 70px;
             height: 35px;
-            margin: 10px 15px;
+            // margin: 10px 15px;
             border: none;
         }
     }
