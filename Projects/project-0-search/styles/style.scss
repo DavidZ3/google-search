@@ -256,34 +256,98 @@ button:hover{
 
 #app-bar {
     margin: 25px 35px;
+    width: calc(100vw - 70px);
     text-align: left;
-    font-size: 22px;
-    color: #d93025;
+    font-size: 20px;
+    color: rgb(241, 131, 121);
+}
+#app-hline{
+    width: 100vw;
+    border-bottom: 1px solid #ebebeb;
 }
 
 #advanced-form {
-    margin: 25px 35px;
-    width: calc(100vw - 50px);
     .row {
+    width: calc(100vw - 70px);
+    margin: 0 30px;
+    height: 42px;
         .row-start{
             display: inline-block;
-            margin: 0px;
-            width: 16vw;
+            margin-left: 10px;
+            width: 10vw;
+            min-width: 170px;
+            font-size: 12px;
+            color: rgb(168, 162, 151);
         }
         .row-center{
             display: inline-block;
             margin: 0px;
-            width: 46vw;
+            width: 30vw;
+            color: rgb(168, 162, 151);
         }
         .row-end{
             display: inline-block;
-            margin: 0px;
-            width: 20vw;
+            margin: 0 8px 0 15px;
+            width: 30vw;
+            vertical-align: middle;
+            color: rgb(168, 162, 151);
+            font-size: 11px;
         }
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 1050px){
             .row-end{
                 display: none;
             }
         }
     }
+}
+
+.advanced-example-text {
+    font-size: 11px;
+    color: #e8e6e3;
+    font-family: monospace;
+}
+
+.advanced-search-form{
+    width: 30vw;
+    height: 24px;
+    color: $text-color;
+    background-color: transparent;
+    border-color: rgb(107, 100, 88);
+    border-width: 1px;
+    text-shadow: none;
+}
+
+.advanced-search-form:focus{
+    border-color: #003eaa;
+    outline: 1px solid #003eaa;
+}
+
+#form-hline{
+    margin-left: 40px;
+    width: 1170px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.advanced-dropdown{
+    width: calc(30vw + 2px);
+    padding: 0 5px;
+    height: 28px;
+    background: transparent;
+    color: $text-color;
+    border-color: rgb(107, 100, 88);
+    border-width: 1px;
+    text-shadow: none;
+
+    select {
+        display: none;
+    }
+}
+.advanced-dropdown:hover{
+    background: transparent;
+}
+
+.advanced-dropdown-content{
+    color: $text-color;
+    background-color: transparent;
+    text-shadow: none;
 }

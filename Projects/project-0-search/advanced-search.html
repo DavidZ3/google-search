@@ -11,7 +11,7 @@
     <div id="header-container">
       <div id="header-left" style="height: 50px;">
         <a href="./index.html">
-          <img src="imgs/googlelogo_light_color_272x92dp.png" alt="google-logo" height="24px">
+          <img src="imgs/googlelogo_light_color_272x92dp.png" alt="google-logo" height="24px" style="margin-left: 10px;">
         </a>
       </div>
       <div></div>
@@ -37,25 +37,140 @@
     </div>
 
     <div id="app-bar">
-      Advanced Search
+      <span style="margin-left: 10px;">Advanced Search</span>
     </div>
+    <div id="app-hline"></div>
+    <div style="width: 100vw; height: 40px"></div>
     <div id="advanced-form">
-        <form id="search-form" action="https://www.google.com/search">
-          <input type="text" name="q" />
-        </form>
         <div class="row">
-          <div class="row-start">
-            This
+          <div class="row-start" style="font-size: 16px; color: #e8e6e3;">
+            Find pages with...
           </div>
           <div class="row-center">
-            is
           </div>
-          <div class="row-end">
-            a test.
+          <div class="row-end" style="margin: 0px; font-size: 13px; color: #e8e6e3">
+            <b>To do this in the search box.</b>
           </div>
         </div>
-    </div>
 
+        <div class="row">
+          <div class="row-start" style="color: rgb(168, 162, 151)">
+            all these words:
+          </div>
+          <div class="row-center">
+            <form id="as_q" action="https://www.google.com/search">
+              <input class="advanced-search-form "type="text" name="as_q" />
+            </form>
+          </div>
+          <div class="row-end" style="color: rgb(169, 162, 151); font-size: 11px;">
+            Type the important words: <span class="advanced-example-text">tri-colour rat terrier</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-start" style="color: rgb(168, 162, 151)">
+            this exact word or phrase:
+          </div>
+          <div class="row-center">
+            <form id="as_epq" action="https://www.google.com/search">
+              <input class="advanced-search-form "type="text" name="as_epq" />
+            </form>
+          </div>
+          <div class="row-end">
+            Put exact word in quotes: <span class="advanced-example-text">"rat terrier"</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-start" style="color: rgb(168, 162, 151)">
+            any of these words:
+          </div>
+          <div class="row-center">
+            <form id="as_oq" action="https://www.google.com/search">
+              <input class="advanced-search-form "type="text" name="as_oq" />
+            </form>
+          </div>
+          <div class="row-end">
+            Type <span class="advanced-example-text">OR</span> between all the words you want:
+            <span class="advanced-example-text">miniature OR standard</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-start">
+            none of these words:
+          </div>
+          <div class="row-center">
+            <form id="as_eq" action="https://www.google.com/search">
+              <input class="advanced-search-form "type="text" name="as_eq" />
+            </form>
+          </div>
+          <div class="row-end">
+            Put a minus sign just before words that you don't want:
+            <span class="advanced-example-text" style="display: block">-rodent, -"Jack Russell"</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-start">
+            numbers ranging from:
+          </div>
+          <div class="row-center" style="display:inline-flex">
+            <div style="display: table; width: 100%;">
+              <div style="display: table-cell; padding-right:16px">
+                <form id="as_nlo" action="https://www.google.com/search">
+                    <input class="advanced-search-form " type="text" name="as_nlo" style="width:100%">
+                </form>
+              </div>
+              <div style="display: table-cell; width:40px; text-align: center; color: #e8e6e3; font-size: 13px;">
+                to
+              </div>
+              <div style="display: table-cell; padding-left:14px">
+                <form id="as_nhi" action="https://www.google.com/search">
+                    <input class="advanced-search-form " type="text" name="as_nhi" style="width:100%">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row-end">
+            Put two full stops between the numbers and add a unit of measurement:
+            <span class="advanced-example-text" style="display: block">10..35 kg, £300..£500, 2010..2011</span>
+          </div>
+        </div>
+
+        <div style="width: 100vw; height: 20px"></div>
+        <div id="form-hline"></div>
+        <div style="width: 100vw; height: 20px"></div>
+
+        <div class="advanced-form">
+          <div class="row">
+            <div class="row-start" style="font-size: 16px; color: #e8e6e3;">
+              Then narrow your results by...
+            </div>
+            <div class="row-center"></div>
+            <div class="row-end"></div>
+          </div>
+
+          <div class="row">
+            <div class="row-start">
+              langauge:
+            </div>
+            <div class="row-center">
+              <form id="lr_input" action="https://www.google.com/search">
+                <select name="lr_input" class="advanced-dropdown">
+                  <option value="Chinese">
+                    Chinese
+                  </option>
+                  <option value="English">
+                    English
+                  </option>
+                </select>
+              </form>
+            </div>
+            <div class="row-end"></div>
+          </div>
+
+        </div>
   </body>
 
 </html>
