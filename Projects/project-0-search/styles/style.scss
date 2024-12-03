@@ -308,13 +308,14 @@ button:hover{
 }
 
 .advanced-search-form{
+    @extend %common-font;
     width: 30vw;
     height: 24px;
     color: $text-color;
-    background-color: transparent;
+    background-color: #121212;
     border-color: rgb(107, 100, 88);
     border-width: 1px;
-    text-shadow: none;
+    border-style: solid;
 }
 
 .advanced-search-form:focus{
@@ -328,18 +329,25 @@ button:hover{
     border-bottom: 1px solid #ebebeb;
 }
 
-.advanced-dropdown{
+#advanced-dropdown{
     width: calc(30vw + 2px);
-    padding: 0 5px;
+    // padding: 0 5px;
     height: 28px;
     background: transparent;
     color: $text-color;
     border-color: rgb(107, 100, 88);
     border-width: 1px;
     text-shadow: none;
-
     select {
-        display: none;
+        @extend %common-font;
+        width: calc(30vw + 2px);
+        height: 28px;
+        color: #ebebeb;
+        background-color: #1f2223;
+        border-color: rgb(107, 100, 88);
+        border-width: 1px;
+        border-style: solid;
+        font-weight: bold;
     }
 }
 .advanced-dropdown:hover{
