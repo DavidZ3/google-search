@@ -11,12 +11,14 @@
     <div id="header-container">
       <div id="header-left" style="height: 50px;">
         <a href="./index.html">
-          <img src="imgs/googlelogo_light_color_272x92dp.png" alt="google-logo" height="24px" style="margin-left: 10px;">
+          <img src="imgs/googlelogo_light_color_272x92dp.png" alt="google-logo" height="24px"
+            style="margin-left: 10px;">
         </a>
       </div>
       <div></div>
       <div id="header-right" style="height: 50px;">
         <div><a href="./image-search.html">Images</a></div>
+        <div><a href="./index.html">Back</a></div>
         <!-- <div><a href="./index.html">Back</a></div> -->
         <div>
           <svg class="gb_E" focusable="false" viewBox="0 0 24 24">
@@ -42,6 +44,7 @@
     <div id="app-hline"></div>
     <div style="width: 100vw; height: 40px"></div>
     <div id="advanced-form">
+      <form action="https://www.google.com/search" method="GET">
         <div class="row">
           <div class="row-start" style="font-size: 16px; color: #e8e6e3;">
             Find pages with...
@@ -58,9 +61,7 @@
             all these words:
           </div>
           <div class="row-center">
-            <form id="as_q" action="https://www.google.com/search">
-              <input class="advanced-search-form "type="text" name="as_q" />
-            </form>
+            <input class="advanced-search-form" type="text" name="as_q" />
           </div>
           <div class="row-end" style="color: rgb(169, 162, 151); font-size: 11px;">
             Type the important words: <span class="advanced-example-text">tri-colour rat terrier</span>
@@ -72,9 +73,7 @@
             this exact word or phrase:
           </div>
           <div class="row-center">
-            <form id="as_epq" action="https://www.google.com/search">
-              <input class="advanced-search-form "type="text" name="as_epq" />
-            </form>
+            <input class="advanced-search-form" type="text" name="as_epq" />
           </div>
           <div class="row-end">
             Put exact word in quotes: <span class="advanced-example-text">"rat terrier"</span>
@@ -86,9 +85,7 @@
             any of these words:
           </div>
           <div class="row-center">
-            <form id="as_oq" action="https://www.google.com/search">
-              <input class="advanced-search-form "type="text" name="as_oq" />
-            </form>
+            <input class="advanced-search-form" type="text" name="as_oq" />
           </div>
           <div class="row-end">
             Type <span class="advanced-example-text">OR</span> between all the words you want:
@@ -101,9 +98,7 @@
             none of these words:
           </div>
           <div class="row-center">
-            <form id="as_eq" action="https://www.google.com/search">
-              <input class="advanced-search-form "type="text" name="as_eq" />
-            </form>
+            <input class="advanced-search-form" type="text" name="as_eq" />
           </div>
           <div class="row-end">
             Put a minus sign just before words that you don't want:
@@ -118,17 +113,13 @@
           <div class="row-center" style="display:inline-flex">
             <div style="display: table; width: 100%;">
               <div style="display: table-cell; padding-right:16px">
-                <form id="as_nlo" action="https://www.google.com/search">
-                    <input class="advanced-search-form " type="text" name="as_nlo" style="width:100%">
-                </form>
+                <input class="advanced-search-form" type="text" name="as_nlo" style="width:100%">
               </div>
               <div style="display: table-cell; width:40px; text-align: center; color: #e8e6e3; font-size: 13px;">
                 to
               </div>
               <div style="display: table-cell; padding-left:14px">
-                <form id="as_nhi" action="https://www.google.com/search">
-                    <input class="advanced-search-form " type="text" name="as_nhi" style="width:100%">
-                </form>
+                <input class="advanced-search-form" type="text" name="as_nhi" style="width:100%">
               </div>
             </div>
           </div>
@@ -156,21 +147,65 @@
               langauge:
             </div>
             <div class="row-center">
-              <form id="advanced-dropdown" action="https://www.google.com/search">
-                <select name="advanced-dropdown">
-                  <option value="Chinese">
-                    Chinese
-                  </option>
-                  <option value="English">
-                    English
-                  </option>
-                </select>
-              </form>
+              <select class="advanced-search-form" name="lr" id="lr">
+                <option value="any-language" selected="selected">any language</option>
+                <option value="lang_ar">Arabic</option>
+                <option value="lang_hy">Armenian</option>
+                <option value="lang_be">Belarusian</option>
+                <option value="lang_bg">Bulgarian</option>
+                <option value="lang_ca">Catalan</option>
+                <option value="lang_zh-cn">Chinese Simplified</option>
+                <option value="lang_zh-tw">Chinese Traditional</option>
+                <option value="lang_hr">Croatian</option>
+                <option value="lang_cs">Czech</option>
+                <option value="lang_da">Danish</option>
+                <option value="lang_nl">Dutch</option>
+                <option value="lang_en">English</option>
+                <option value="lang_eo">Esperanto</option>
+                <option value="lang_et">Estonian</option>
+                <option value="lang_tl">Filipino</option>
+                <option value="lang_fi">Finnish</option>
+                <option value="lang_fr">French</option>
+                <option value="lang_de">German</option>
+                <option value="lang_el">Greek</option>
+                <option value="lang_iw">Hebrew</option>
+                <option value="lang_hu">Hungarian</option>
+                <option value="lang_is">Icelandic</option>
+                <option value="lang_id">Indonesian</option>
+                <option value="lang_it">Italian</option>
+                <option value="lang_ja">Japanese</option>
+                <option value="lang_ko">Korean</option>
+                <option value="lang_lv">Latvian</option>
+                <option value="lang_lt">Lithuanian</option>
+                <option value="lang_no">Norwegian</option>
+                <option value="lang_fa">Persian</option>
+                <option value="lang_pl">Polish</option>
+                <option value="lang_pt">Portuguese</option>
+                <option value="lang_ro">Romanian</option>
+                <option value="lang_ru">Russian</option>
+                <option value="lang_sr">Serbian</option>
+                <option value="lang_sk">Slovak</option>
+                <option value="lang_sl">Slovenian</option>
+                <option value="lang_es">Spanish</option>
+                <option value="lang_sv">Swedish</option>
+                <option value="lang_th">Thai</option>
+                <option value="lang_tr">Turkish</option>
+                <option value="lang_uk">Ukrainian</option>
+                <option value="lang_vi">Vietnamese</option>
+              </select>
             </div>
             <div class="row-end"></div>
           </div>
-
+          <div class="row" style="margin-top: 20px;">
+            <div class="row-start"></div>
+            <div class="row-center" style="text-align: right;">
+              <input type="submit" value="Advanced Search">
+            </div>
+            <div class="row-end"></div>
+          </div>
         </div>
+      </form>
+    </div>
   </body>
 
 </html>
