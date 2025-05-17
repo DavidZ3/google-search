@@ -324,32 +324,3 @@ button:hover{
     width: 1170px;
     border-bottom: 1px solid #ebebeb;
 }
-
-#advanced-dropdown{
-    width: calc(30vw + 2px);
-    height: 28px;
-    background: transparent;
-    color: $text-color;
-    border-width: 1px;
-    text-shadow: none;
-    select {
-        @extend %common-font;
-        width: calc(30vw + 2px);
-        height: 28px;
-        background-color: #121212;
-        border-color: rgb(107, 100, 88);
-        border-width: 1px;
-        border-style: solid;
-        font-weight: bold;
-        font-size: 11px;
-    }
-}
-.advanced-dropdown:hover{
-    background: transparent;
-}
-
-.advanced-dropdown-content{
-    color: $text-color;
-    background-color: transparent;
-    text-shadow: none;
-}
