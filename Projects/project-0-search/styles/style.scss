@@ -299,28 +299,24 @@ button:hover{
             }
         }
     }
+    .advanced-search-form {
+        width: 30vw;
+        height: 24px;
+        color: rgb(193, 188, 180);
+        background-color: #121212;
+        border: 1px solid rgb(107, 100, 88);
+        
+        &:focus {
+            border-color: #003eaa;
+            outline: none;
+        }
+    }
 }
 
 .advanced-example-text {
     font-size: 11px;
     color: #e8e6e3;
     font-family: monospace;
-}
-
-.advanced-search-form{
-    @extend %common-font;
-    width: 30vw;
-    height: 24px;
-    color: $text-color;
-    background-color: #121212;
-    border-color: rgb(107, 100, 88);
-    border-width: 1px;
-    border-style: solid;
-}
-
-.advanced-search-form:focus{
-    border-color: #003eaa;
-    outline: 1px solid #003eaa;
 }
 
 #form-hline{
