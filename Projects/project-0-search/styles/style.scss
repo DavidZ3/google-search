@@ -331,23 +331,21 @@ button:hover{
 
 #advanced-dropdown{
     width: calc(30vw + 2px);
-    // padding: 0 5px;
     height: 28px;
     background: transparent;
     color: $text-color;
-    border-color: rgb(107, 100, 88);
     border-width: 1px;
     text-shadow: none;
     select {
         @extend %common-font;
         width: calc(30vw + 2px);
         height: 28px;
-        color: #ebebeb;
-        background-color: #1f2223;
+        background-color: #121212;
         border-color: rgb(107, 100, 88);
         border-width: 1px;
         border-style: solid;
         font-weight: bold;
+        font-size: 11px;
     }
 }
 .advanced-dropdown:hover{
