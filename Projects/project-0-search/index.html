@@ -70,13 +70,14 @@
         </svg>
         <form id="search-form" action="https://www.google.com/search">
           <input id="search-input" type="text" name="q" />
+          <input type="hidden" name="btnI" value="" id="btnI">
+          <input type="hidden" name="sourceid" value="navclient">
+          <input type="hidden" name="gfns" value="1">
         </form>
       </div>
       <div id="button-row">
-        <button type="submit" form="search-form">Google Search</button>
-        <a href="">
-          <button>I'm Feeling Lucky</button>
-        </a>
+        <button type="submit" form="search-form" name="btnI" value="">Google Search</button>
+        <button type="submit" form="search-form" name="btnI" value="1">I'm Feeling Lucky</button>
       </div>
     </div>
     <div id="post-search-container"></div>
