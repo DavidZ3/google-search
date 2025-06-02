@@ -69,18 +69,12 @@
           ></path>
         </svg>
         <form id="search-form" action="https://www.google.com/search">
-          <input id="search-input" type="text" name="q" />
-        </form>
-        <form id="lucky-form" action="https://www.google.com/search">
-          <input type="hidden" name="q" form="lucky-form">
-          <input type="hidden" name="btnI" value="1">
-          <input type="hidden" name="sourceid" value="navclient">
-          <input type="hidden" name="gfns" value="1">
+          <input id="search-input" type="text" name="q" form="search-form">
         </form>
       </div>
       <div id="button-row">
         <button type="submit" form="search-form">Google Search</button>
-        <button type="submit" form="lucky-form">I'm Feeling Lucky</button>
+        <button type="submit" form="search-form" name="btnI" value="1">I'm Feeling Lucky</button>
       </div>
     </div>
     <div id="post-search-container"></div>
@@ -112,9 +106,4 @@
       </div>
     </div>
   </body>
-  <script>
-    const searchInput = document.getElementById("search-input");
-    const luckyInput = document.querySelector("input[name=q][form=lucky-form]");
-    searchInput.addEventListener("input", (e) => (luckyInput.value = e.target.value));
-  </script>
 </html>
