@@ -1,7 +1,7 @@
 # Google Search
 
-This repo is Project 0 from Harvard’s free online course CS50’s Web Programming with Python & JavaScript (CS50W).
-The assignment: re‑create **Google Search, Google Image Search, and Google Advanced Search** using only HTML and vanilla CSS (or SASS). 
+This repo is Project 0 from Harvard’s free online course CS50’s Web Programming with Python & JavaScript (**CS50W**).
+The assignment: re‑create **Google Search**, **Google Image Search**, and **Google Advanced Search** using only **HTML** and vanilla **CSS** (or **SASS**). 
 
 No frameworks, no JavaScript - just pure front-end fundamentals.
 
